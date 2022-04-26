@@ -6,3 +6,4 @@ spring:
     jedis:
       pool:
         max-active: 10
+        #hot fox
