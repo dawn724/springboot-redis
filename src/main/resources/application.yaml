@@ -6,4 +6,3 @@ spring:
     jedis:
       pool:
         max-active: 10
-    client-type: jedis
