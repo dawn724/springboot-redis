@@ -7,3 +7,6 @@ spring:
       pool:
         max-active: 10
         #hot fox
+        #master
+        #master
+        #master
