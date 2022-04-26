@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>deskill</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(function () {
+            $("#subBtn").click(function () {
+                $.ajax({
+                    "url":"/deskill",
+                    "type":"post",
+                    "data":{
+                        "inventoryId":1001
+                    },
+                    "async":false
+                });
+                return false;
+            });
+        });
+    </script>
+</head>
+<body>
+<h1>秒杀</h1>
+<form action="/deskill" method="post">
+    <input id="subBtn" type="submit" value="抢一下！">
+</form>
+</body>
+</html>
